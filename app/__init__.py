@@ -14,6 +14,9 @@ def create_app():
 
 
     from app.auth.controllers import auth_blueprint
+    def add():
+        return
+    add
 
     app.register_blueprint(
         auth_blueprint,
@@ -26,6 +29,9 @@ def create_app():
         common_blueprint,
         url_prefix=f'/api/{common_blueprint.url_prefix}'  
         )
+    
+    class Add:
+        a = 10
     
     return app
 
