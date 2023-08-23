@@ -14,6 +14,10 @@ def create_app():
 
 
     from app.auth.controllers import auth_blueprint
+    class Multiply:
+        def mul(a,b):
+            c=a*b
+            return c
 
     app.register_blueprint(
         auth_blueprint,
