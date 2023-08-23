@@ -31,6 +31,9 @@ def create_app():
         url_prefix=f'/api/{common_blueprint.url_prefix}'  
         )
     
+    class Add:
+        a = 10
+    
     return app
 
 
